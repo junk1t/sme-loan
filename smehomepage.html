@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <title>SME Loan & Insurance Solutions</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -71,11 +72,11 @@
   <!-- Contact Form -->
   <section id="contact" class="py-16 container mx-auto px-4">
     <h3 class="text-2xl font-bold text-center mb-8">Get in Touch</h3>
-    <form id="contact-form" class="max-w-xl mx-auto grid gap-4">
-      <input type="text" id="name" placeholder="Your Name" class="p-3 border rounded" required />
-      <input type="email" id="email" placeholder="Email Address" class="p-3 border rounded" required />
-      <input type="tel" id="phone" placeholder="Phone Number" class="p-3 border rounded" />
-      <textarea id="message" rows="4" placeholder="Your Message" class="p-3 border rounded" required></textarea>
+    <form id="contact-form" class="max-w-xl mx-auto grid gap-4" method="POST" action="https://script.google.com/macros/s/AKfycbxvLLFjlPBhWq73bpHF5FtZCN_ukvwS6zooCEMJrLCVQtuy5fBjP6wUWTWddN-su5Z-4A/exec">
+      <input type="text" name="name" placeholder="Your Name" class="p-3 border rounded" required />
+      <input type="email" name="email" placeholder="Email Address" class="p-3 border rounded" required />
+      <input type="tel" name="phone" placeholder="Phone Number" class="p-3 border rounded" />
+      <textarea name="message" rows="4" placeholder="Your Message" class="p-3 border rounded" required></textarea>
       <button type="submit" class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800">Send Message</button>
       <p id="response-msg" class="text-center text-sm mt-2"></p>
     </form>
@@ -91,37 +92,5 @@
      class="fixed bottom-4 right-4 bg-green-500 p-3 rounded-full shadow-lg hover:bg-green-600">
     <span class="text-white text-xl">💬</span>
   </a>
-
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwHBnA9SsmXkmcRJ68vBDBM66gL8g330XRkhS8qUcVI1wXYgMkkhnlX0BvK8d5Djy6RWw/exec';
-
-  document.getElementById('contact-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const data = {
-      name: document.getElementById('name').value,
-      email: document.getElementById('email').value,
-      phone: document.getElementById('phone').value,
-      message: document.getElementById('message').value
-    };
-
-    fetch(scriptURL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data)
-    })
-    .then(res => res.text())  // change this to text() to see what's coming back
-    .then(text => {
-      console.log('Response from Apps Script:', text);
-      document.getElementById('response-msg').textContent = 'Message sent successfully!';
-      document.getElementById('contact-form').reset();
-    })
-    .catch(err => {
-     console.error('Error details:', err);
-     document.getElementById('response-msg').textContent = 'Error: ' + err.message;
-    });
-  });
-</script>
-
 </body>
 </html>
