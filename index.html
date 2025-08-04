@@ -10,77 +10,215 @@
 <body class="bg-white text-gray-800 font-sans">
 
   <!-- Navbar -->
-  <header class="bg-blue-900 text-white shadow">
-    <div class="container mx-auto flex justify-between items-center p-4">
-      <h1 class="text-xl font-bold">SME FinancePro</h1>
-      <nav class="space-x-4">
-        <a href="#services" class="hover:underline">Services</a>
-        <a href="#why-us" class="hover:underline">Why Us</a>
-        <a href="#contact" class="hover:underline">Contact</a>
-      </nav>
-    </div>
-  </header>
+<header class="bg-white text-black shadow">
+  <div class="container mx-auto flex justify-between items-center p-4">
+    <h1 class="text-xl font-bold">SME FinancePro</h1>
+    <nav class="space-x-4">
+      <a href="#services" class="hover:underline">Services</a>
+      <a href="#why-us" class="hover:underline">Why Us</a>
+      <a href="#contact" class="hover:underline">Contact</a>
+    </nav>
+  </div>
+</header>
 
   <!-- Hero Section -->
-  <section class="bg-blue-100 py-16 text-center">
-    <h2 class="text-4xl font-bold mb-4">Flexible SME Loans & Tailored Insurance Solutions</h2>
-    <p class="text-lg mb-6">Empowering Small Businesses with Financial Confidence</p>
-    <a href="#contact" class="bg-blue-900 text-white px-6 py-3 rounded-full text-lg hover:bg-blue-800">
-      Get a Free Quote
+<section class="relative bg-cover bg-center text-white h-screen" 
+         style="background-image: url('pictures/background1.png');">
+  <!-- Optional dark overlay for readability -->
+  <div class="absolute inset-0 bg-black bg-opacity-40 backdrop-blur-sm"></div>
+
+  <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+    <h2 class="text-5xl font-bold mb-6">Solution To All Your Financial Crisis</h2>
+    <p class="text-xl mb-8">Empowering Small Businesses with Financial Solutions</p>
+    <a href="#contact" class="bg-blue-900 text-white px-8 py-4 rounded-full text-xl hover:bg-blue-800">
+      Let Us Know More
     </a>
-  </section>
+  </div>
+  </div>
+</section>
 
   <!-- Services Section -->
-  <section id="services" class="py-16 container mx-auto px-4">
-    <h3 class="text-2xl font-bold text-center mb-8">Our Services</h3>
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="bg-white shadow rounded p-6">
-        <h4 class="text-xl font-semibold mb-2">SME Loans</h4>
-        <p>Get fast-approval business loans with flexible repayment options. Ideal for growing small businesses in need of working capital, expansion, or emergency funds.</p>
-      </div>
-      <div class="bg-white shadow rounded p-6">
-        <h4 class="text-xl font-semibold mb-2">Insurance Plans</h4>
-        <p>Protect your business, employees, and assets with our custom insurance solutions. Includes general liability, property, and health insurance options.</p>
+  <section class="py-16 bg-white text-center" id="services">
+  <div class="mb-12">
+    <h2 class="text-4xl font-bold text-blue-900 mt-2">Services We Offer</h2>
+  </div>
+
+  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+    <!-- Card 1 -->
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col justify-between h-full">
+      <div>
+        <h3 class="text-lg font-bold text-blue-900">Term Loan</h3>
+        <p class="text-gray-600 mt-2 text-sm">
+          Cover project startup costs, mobilization, salaries, and daily operations.
+        </p>
+        <p class="text-gray-600 mt-2 text-sm">Good if you need upfront capital</p>
       </div>
     </div>
-  </section>
 
-  <!-- Why Choose Us -->
-  <section id="why-us" class="bg-gray-100 py-16">
-    <div class="container mx-auto px-4">
-      <h3 class="text-2xl font-bold text-center mb-8">Why Choose Us</h3>
-      <div class="grid md:grid-cols-3 gap-8 text-center">
-        <div>
-          <div class="text-4xl text-blue-900 mb-2">⚡</div>
-          <h5 class="font-semibold text-lg">Fast Approval</h5>
-          <p>Quick application process with real-time updates.</p>
-        </div>
-        <div>
-          <div class="text-4xl text-blue-900 mb-2">📊</div>
-          <h5 class="font-semibold text-lg">Tailored Solutions</h5>
-          <p>Plans and loans designed specifically for your SME needs.</p>
-        </div>
-        <div>
-          <div class="text-4xl text-blue-900 mb-2">💬</div>
-          <h5 class="font-semibold text-lg">Expert Support</h5>
-          <p>Personalized guidance from financial professionals.</p>
-        </div>
+    <!-- Card 2 -->
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col justify-between h-full">
+      <div>
+        <h3 class="text-lg font-bold text-blue-900">Performance Bond</h3>
+        <p class="text-gray-600 mt-2 text-sm">
+          Secure project acceptance by providing required bonds (Performance, Advance Payment, etc.)
+        </p>
       </div>
     </div>
-  </section>
 
-  <!-- Contact Form -->
-  <section id="contact" class="py-16 container mx-auto px-4">
-    <h3 class="text-2xl font-bold text-center mb-8">Get in Touch</h3>
-    <form id="contact-form" class="max-w-xl mx-auto grid gap-4" method="POST" action="https://script.google.com/macros/s/AKfycbxQ_t6iyEXSzxD5GQbttzyFo94UaZmam8G1xa77HMflxJJFmqIGCR0JCIuqKk7J4qSCbg/exec">
-      <input type="text" name="name" placeholder="Your Name" class="p-3 border rounded" required />
-      <input type="email" name="email" placeholder="Email Address" class="p-3 border rounded" required />
-      <input type="tel" name="phone" placeholder="Phone Number" class="p-3 border rounded" />
-      <textarea name="message" rows="4" placeholder="Your Message" class="p-3 border rounded" required></textarea>
-      <button type="submit" class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800">Send Message</button>
-      <p id="response-msg" class="text-center text-sm mt-2"></p>
-    </form>
-  </section>
+    <!-- Card 3 -->
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col justify-between h-full">
+      <div>
+        <h3 class="text-lg font-bold text-blue-900">Invoice Financing</h3>
+        <p class="text-gray-600 mt-2 text-sm">
+          Unlock cash from progress claims or issued invoices before payment is received.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col justify-between h-full">
+      <div>
+        <h3 class="text-lg font-bold text-blue-900">Trade Financing</h3>
+        <p class="text-gray-600 mt-2 text-sm">
+          Fund bulk purchases from suppliers or material imports.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col justify-between h-full">
+      <div>
+        <h3 class="text-lg font-bold text-blue-900">Asset Financing</h3>
+        <p class="text-gray-600 mt-2 text-sm">
+          Purchase of construction equipment, machinery, or commercial vehicles.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col justify-between h-full">
+      <div>
+        <h3 class="text-lg font-bold text-blue-900">Government-Backed SME Schemes</h3>
+        <p class="text-gray-600 mt-2 text-sm">
+          Lower interest SME loans.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section id="why-us" class="bg-gray-100 py-16">
+  <div class="container mx-auto px-4">
+    <h3 class="text-2xl font-bold text-center mb-8">Why Choose Us</h3>
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+      <div>
+        <div class="text-4xl text-blue-900 mb-2">⚡</div>
+        <h5 class="font-semibold text-lg">Fast Approval</h5>
+        <p>Quick application process with real-time updates.</p>
+      </div>
+      <div>
+        <div class="text-4xl text-blue-900 mb-2">📊</div>
+        <h5 class="font-semibold text-lg">Tailored Solutions</h5>
+        <p>Plans and loans designed specifically for your SME needs.</p>
+      </div>
+      <div>
+        <div class="text-4xl text-blue-900 mb-2">💬</div>
+        <h5 class="font-semibold text-lg">Expert Support</h5>
+        <p>Personalized guidance from financial professionals.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Form Section -->
+<section id="contact" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6 lg:px-16">
+    <h3 class="text-3xl font-bold text-center text-blue-900 mb-12">
+      Drop Us A Message 
+       </h3>
+
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Left Side: Image -->
+      <div class="flex justify-center">
+        <img 
+          src="pictures/ContactMe.png" 
+          alt="Finance Contact" 
+          class="rounded-2xl shadow-lg w-full h-[500px] object-cover"
+        />
+      </div>
+
+      <!-- Right Side: Contact Form -->
+      <form 
+        id="contact-form" 
+        method="POST" 
+        action="https://script.google.com/macros/s/AKfycbxQ_t6iyEXSzxD5GQbttzyFo94UaZmam8G1xa77HMflxJJFmqIGCR0JCIuqKk7J4qSCbg/exec"
+        class="bg-white rounded-2xl shadow-xl p-8 space-y-6"
+      >
+        <!-- Name -->
+        <div>
+          <label class="block text-left font-semibold text-gray-700 mb-2">Your Name</label>
+          <input 
+            type="text" 
+            name="name" 
+            placeholder="Enter your full name" 
+            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600" 
+            required 
+          />
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label class="block text-left font-semibold text-gray-700 mb-2">Email Address</label>
+          <input 
+            type="email" 
+            name="email" 
+            placeholder="Enter your email" 
+            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600" 
+            required 
+          />
+        </div>
+
+        <!-- Phone -->
+        <div>
+          <label class="block text-left font-semibold text-gray-700 mb-2">Phone Number</label>
+          <input 
+            type="tel" 
+            name="phone" 
+            placeholder="Optional" 
+            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600" 
+          />
+        </div>
+
+        <!-- Message -->
+        <div>
+          <label class="block text-left font-semibold text-gray-700 mb-2">Your Message</label>
+          <textarea 
+            name="message" 
+            rows="5" 
+            placeholder="Write your message here..." 
+            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600" 
+            required
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+          <button 
+            type="submit" 
+            class="w-full bg-blue-900 text-white font-semibold py-4 rounded-lg shadow-md hover:bg-blue-800 transition"
+          >
+            Send Message
+          </button>
+        </div>
+
+        <!-- Response Message -->
+        <p id="response-msg" class="text-center text-sm mt-4 text-gray-600"></p>
+      </form>
+    </div>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="bg-blue-900 text-white text-center py-4">
@@ -88,7 +226,7 @@
   </footer>
 
   <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/60123456789" target="_blank"
+  <a href="https://wa.me/60123595893" target="_blank"
      class="fixed bottom-4 right-4 bg-green-500 p-3 rounded-full shadow-lg hover:bg-green-600">
     <span class="text-white text-xl">💬</span>
   </a>
