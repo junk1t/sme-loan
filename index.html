@@ -10,7 +10,7 @@
 <body class="bg-white text-gray-800 font-sans">
 
   <!-- Navbar -->
-<header class="bg-white text-black shadow">
+<header class="sticky top-0 bg-white text-black shadow z-50">
   <div class="container mx-auto flex justify-between items-center p-4">
     <h1 class="text-xl font-bold">SME FinancePro</h1>
     <nav class="space-x-4">
@@ -31,81 +31,52 @@
     <h2 class="text-5xl font-bold mb-6">Solution To All Your Financial Crisis</h2>
     <p class="text-xl mb-8">Empowering Small Businesses with Financial Solutions</p>
     <a href="#contact" class="bg-blue-900 text-white px-8 py-4 rounded-full text-xl hover:bg-blue-800">
-      Let Us Know More
+      Tell Us More
     </a>
   </div>
   </div>
 </section>
 
-  <!-- Services Section -->
-  <section class="py-16 bg-white text-center" id="services">
+<!-- Services Section -->
+ <!-- Services Section -->
+<section class="min-h-screen flex flex-col justify-center py-16 bg-white text-center" id="services">
   <div class="mb-12">
     <h2 class="text-4xl font-bold text-blue-900 mt-2">Services We Offer</h2>
   </div>
 
+  <!-- Row 1: 3 Cards -->
   <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
-    <!-- Card 1 -->
-    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col justify-between h-full">
-      <div>
-        <h3 class="text-lg font-bold text-blue-900">Term Loan</h3>
-        <p class="text-gray-600 mt-2 text-sm">
-          Cover project startup costs, mobilization, salaries, and daily operations.
-        </p>
-        <p class="text-gray-600 mt-2 text-sm">Good if you need upfront capital</p>
-      </div>
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col h-full">
+      <h3 class="text-lg font-bold text-blue-900">Term Loan</h3>
+      <p class="text-gray-600 mt-2 text-sm">Cover project startup costs, mobilization, salaries, and daily operations.</p>
+      <p class="text-gray-600 mt-2 text-sm">Good if you need upfront capital</p>
     </div>
 
-    <!-- Card 2 -->
-    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col justify-between h-full">
-      <div>
-        <h3 class="text-lg font-bold text-blue-900">Performance Bond</h3>
-        <p class="text-gray-600 mt-2 text-sm">
-          Secure project acceptance by providing required bonds (Performance, Advance Payment, etc.)
-        </p>
-      </div>
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col h-full">
+      <h3 class="text-lg font-bold text-blue-900">Performance Bond</h3>
+      <p class="text-gray-600 mt-2 text-sm">Secure project acceptance by providing required bonds (Performance, Advance Payment, etc.)</p>
     </div>
 
-    <!-- Card 3 -->
-    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col justify-between h-full">
-      <div>
-        <h3 class="text-lg font-bold text-blue-900">Invoice Financing</h3>
-        <p class="text-gray-600 mt-2 text-sm">
-          Unlock cash from progress claims or issued invoices before payment is received.
-        </p>
-      </div>
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col h-full">
+      <h3 class="text-lg font-bold text-blue-900">Invoice Financing</h3>
+      <p class="text-gray-600 mt-2 text-sm">Unlock cash from progress claims or issued invoices before payment is received.</p>
+    </div>
+  </div>
+
+  <!-- Row 2: 2 Cards Centered -->
+  <div class="max-w-4xl mx-auto mt-8 grid grid-cols-1 sm:grid-cols-2 gap-8 px-6">
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col h-full">
+      <h3 class="text-lg font-bold text-blue-900">Trade Financing</h3>
+      <p class="text-gray-600 mt-2 text-sm">Fund bulk purchases from suppliers or material imports.</p>
     </div>
 
-    <!-- Card 4 -->
-    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col justify-between h-full">
-      <div>
-        <h3 class="text-lg font-bold text-blue-900">Trade Financing</h3>
-        <p class="text-gray-600 mt-2 text-sm">
-          Fund bulk purchases from suppliers or material imports.
-        </p>
-      </div>
-    </div>
-
-    <!-- Card 5 -->
-    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col justify-between h-full">
-      <div>
-        <h3 class="text-lg font-bold text-blue-900">Asset Financing</h3>
-        <p class="text-gray-600 mt-2 text-sm">
-          Purchase of construction equipment, machinery, or commercial vehicles.
-        </p>
-      </div>
-    </div>
-
-    <!-- Card 6 -->
-    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col justify-between h-full">
-      <div>
-        <h3 class="text-lg font-bold text-blue-900">Government-Backed SME Schemes</h3>
-        <p class="text-gray-600 mt-2 text-sm">
-          Lower interest SME loans.
-        </p>
-      </div>
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition flex flex-col h-full">
+      <h3 class="text-lg font-bold text-blue-900">Asset Financing</h3>
+      <p class="text-gray-600 mt-2 text-sm">Purchase of construction equipment, machinery, or commercial vehicles.</p>
     </div>
   </div>
 </section>
+
 
 <!-- Why Choose Us -->
 <section id="why-us" class="bg-gray-100 py-16">
@@ -151,79 +122,103 @@
 
       <!-- Right Side: Contact Form -->
       <form 
-        id="contact-form" 
-        method="POST" 
-        action="https://script.google.com/macros/s/AKfycbxQ_t6iyEXSzxD5GQbttzyFo94UaZmam8G1xa77HMflxJJFmqIGCR0JCIuqKk7J4qSCbg/exec"
-        class="bg-white rounded-2xl shadow-xl p-8 space-y-6"
-      >
-        <!-- Name -->
-        <div>
-          <label class="block text-left font-semibold text-gray-700 mb-2">Your Name</label>
-          <input 
-            type="text" 
-            name="name" 
-            placeholder="Enter your full name" 
-            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600" 
-            required 
-          />
-        </div>
-
-        <!-- Email -->
-        <div>
-          <label class="block text-left font-semibold text-gray-700 mb-2">Email Address</label>
-          <input 
-            type="email" 
-            name="email" 
-            placeholder="Enter your email" 
-            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600" 
-            required 
-          />
-        </div>
-
-        <!-- Phone -->
-        <div>
-          <label class="block text-left font-semibold text-gray-700 mb-2">Phone Number</label>
-          <input 
-            type="tel" 
-            name="phone" 
-            placeholder="Optional" 
-            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600" 
-          />
-        </div>
-
-        <!-- Message -->
-        <div>
-          <label class="block text-left font-semibold text-gray-700 mb-2">Your Message</label>
-          <textarea 
-            name="message" 
-            rows="5" 
-            placeholder="Write your message here..." 
-            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600" 
-            required
-          ></textarea>
-        </div>
-
-        <!-- Submit Button -->
-        <div>
-          <button 
-            type="submit" 
-            class="w-full bg-blue-900 text-white font-semibold py-4 rounded-lg shadow-md hover:bg-blue-800 transition"
-          >
-            Send Message
-          </button>
-        </div>
-
-        <!-- Response Message -->
-        <p id="response-msg" class="text-center text-sm mt-4 text-gray-600"></p>
-      </form>
-    </div>
+  id="contact-form" 
+  method="POST" 
+  action="https://script.google.com/macros/s/AKfycbyHAkogcvVTCPMlwo8AoLl_xxKp4s4k8Nke08AmjfFe2dsIwvsdqmvwReiObTodEJh_0w/exec"
+  class="bg-white rounded-2xl shadow-xl p-8 space-y-6"
+>
+  <!-- Name -->
+  <div>
+    <label class="block text-left font-semibold text-gray-700 mb-2">Name</label>
+    <input 
+      type="text" 
+      name="name" 
+      placeholder="Enter your full name" 
+      class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600" 
+      required 
+    />
   </div>
+
+  <!-- Email -->
+  <div>
+    <label class="block text-left font-semibold text-gray-700 mb-2">Email Address</label>
+    <input 
+      type="email" 
+      name="email" 
+      placeholder="Enter your email" 
+      class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600" 
+      required 
+    />
+  </div>
+
+  <!-- Phone -->
+  <div>
+    <label class="block text-left font-semibold text-gray-700 mb-2">Phone Number</label>
+    <input 
+      type="tel" 
+      name="phone" 
+      placeholder="Enter your phone number" 
+      class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600" 
+    />
+  </div>
+
+  <!-- Message -->
+  <div>
+    <label class="block text-left font-semibold text-gray-700 mb-2">Message</label>
+    <textarea 
+      name="message" 
+      rows="5" 
+      placeholder="Tell us more here..." 
+      class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600" 
+      required
+    ></textarea>
+  </div>
+
+  <!-- Submit Button -->
+  <div>
+    <button 
+      type="submit" 
+      class="w-full bg-blue-900 text-white font-semibold py-4 rounded-lg shadow-md hover:bg-blue-800 transition"
+    >
+     Submit
+    </button>
+  </div>
+
+  <!-- Response Message -->
+  <p id="response-msg" class="text-center text-sm mt-4 text-gray-600"></p>
+</form>
 </section>
 
   <!-- Footer -->
-  <footer class="bg-blue-900 text-white text-center py-4">
-    © 2025 SME FinancePro. All rights reserved.
-  </footer>
+<footer class="bg-blue-900 text-white text-center py-6 w-screen">
+  © 2025 SME FinancePro. All rights reserved.
+</footer>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const form = this;
+  const formData = new FormData(form);
+  const responseMsg = document.getElementById("response-msg");
+
+  responseMsg.textContent = "⏳ Sending your message...";
+
+  fetch(form.action, { 
+    method: "POST", 
+    body: formData, 
+    mode: "no-cors"   // 👈 Important
+  })
+  .then(() => {
+    responseMsg.textContent = "✅ Thank you! Your message has been sent.";
+    form.reset();
+  })
+  .catch(error => {
+    console.error("Error:", error);
+    responseMsg.textContent = "❌ Network error. Please try again.";
+  });
+});
+</script>
+
 
   <!-- WhatsApp Floating Button -->
   <a href="https://wa.me/60123595893" target="_blank"
